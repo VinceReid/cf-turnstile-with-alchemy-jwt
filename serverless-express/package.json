@@ -1,0 +1,31 @@
+{
+  "name": "cf-turnstile-with-alchemy-jwt",
+  "version": "1.0.0",
+  "description": "Proxy API to process Cloudfront turnstile responses via site-verify. Returns a JWT response that can be used for Alchemy API web3 requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "esbuild index.js --bundle --platform=node --outfile=serverless-api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VinceReid/cf-turnstile-with-alchemy-jwt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VinceReid/cf-turnstile-with-alchemy-jwt/issues"
+  },
+  "homepage": "https://github.com/VinceReid/cf-turnstile-with-alchemy-jwt#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.21.5"
+  }
+}
